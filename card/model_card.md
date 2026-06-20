@@ -86,6 +86,10 @@ the question, matching the training format.
 - BIRD-hard questions needing external knowledge remain weak.
 - **Review generated SQL before running it** against any real database.
 
+## Related
+Part of a series of focused "English → developer DSL" fine-tunes:
+- [Qwen2.5-Coder-1.5B-Shellsmith](https://huggingface.co/ajayk007/Qwen2.5-Coder-1.5B-Shellsmith) — English → shell command.
+
 ## License
 Apache-2.0 (model weights, inheriting from the base). Training data derives from
 Spider and BIRD (CC BY-SA 4.0) — see the dataset card.

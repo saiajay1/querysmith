@@ -42,6 +42,11 @@ Spider). Reporting a partly-refuted hypothesis *with the correct diagnosis* is t
 - 🤗 Model (MLX 4-bit): [`ajayk007/Qwen2.5-Coder-7B-Querysmith`](https://huggingface.co/ajayk007/Qwen2.5-Coder-7B-Querysmith)
 - 📊 Dataset: [`ajayk007/querysmith-spider-bird`](https://huggingface.co/datasets/ajayk007/querysmith-spider-bird)
 
+## Related
+
+Part of a series of focused **"English → developer DSL"** fine-tunes:
+- [**Shellsmith**](https://github.com/saiajay1/shellsmith) — English → shell command ([model](https://huggingface.co/ajayk007/Qwen2.5-Coder-1.5B-Shellsmith))
+
 ## Layout
 ```
 data/download_data.py   # lean Spider+BIRD fetcher (pairs + schemas + dev DBs)
