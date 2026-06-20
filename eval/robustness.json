@@ -1,0 +1,16 @@
+[
+  {
+    "label": "base",
+    "questions": 40,
+    "consistency": 62.0,
+    "robust_acc": 60.0,
+    "best_acc": 62.5
+  },
+  {
+    "label": "fine-tuned",
+    "questions": 40,
+    "consistency": 63.5,
+    "robust_acc": 60.0,
+    "best_acc": 65.0
+  }
+]

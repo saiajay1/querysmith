@@ -1,0 +1,4 @@
+mlx-lm>=0.31
+huggingface_hub>=1.0
+datasets>=3.0
+rich>=13.0

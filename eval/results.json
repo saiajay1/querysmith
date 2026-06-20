@@ -1,0 +1,28 @@
+[
+  {
+    "label": "base",
+    "spider": {
+      "n": 180,
+      "exec_acc": 61.7,
+      "valid_sql": 80.0
+    },
+    "bird": {
+      "n": 200,
+      "exec_acc": 55.0,
+      "valid_sql": 90.5
+    }
+  },
+  {
+    "label": "fine-tuned",
+    "spider": {
+      "n": 180,
+      "exec_acc": 67.2,
+      "valid_sql": 80.6
+    },
+    "bird": {
+      "n": 200,
+      "exec_acc": 53.0,
+      "valid_sql": 89.5
+    }
+  }
+]

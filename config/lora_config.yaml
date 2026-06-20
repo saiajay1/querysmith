@@ -1,0 +1,28 @@
+# mlx-lm LoRA config for Querysmith — schema-grounded text-to-SQL on Qwen2.5-Coder-7B.
+# Run: mlx_lm.lora --config config/lora_config.yaml  (or scripts/watch_train.py)
+
+model: "Qwen/Qwen2.5-Coder-7B-Instruct"
+train: true
+data: "data"                       # train.jsonl / valid.jsonl
+
+fine_tune_type: lora
+num_layers: 8                      # fewer layers on a 7B keeps memory in check
+
+lora_parameters:
+  rank: 16
+  scale: 20.0
+  dropout: 0.05
+
+batch_size: 2                      # 7B + long schema prompts -> small batch
+iters: 1200
+learning_rate: 1.0e-4
+max_seq_length: 1536               # schema + question + SQL can be long
+grad_checkpoint: true              # trade compute for memory on the 7B
+
+steps_per_report: 20
+steps_per_eval: 300
+val_batches: 15
+save_every: 300
+adapter_path: "adapters"
+
+seed: 1707

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+adapters/
+dist/
+.tools/
+.DS_Store
+
+# big / regenerable data (DBs + built splits live on HF, rebuilt by data/ scripts)
+data/raw/
+data/*.jsonl
+
+# eval/results.json, eval/robustness.json and the chart ARE committed as evidence.
